@@ -1,0 +1,6 @@
+#!/bin/sh
+# Pre-push hook: fail the push if the test suite does not pass.
+set -e
+
+echo "pre-push: running 'cargo test'"
+cargo test
