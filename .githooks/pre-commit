@@ -1,0 +1,6 @@
+#!/bin/sh
+# Pre-commit hook: fail the commit if the code is not formatted.
+set -e
+
+echo "pre-commit: running 'cargo fmt --check'"
+cargo fmt --check
